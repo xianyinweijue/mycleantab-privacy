@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MyCleanTab Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --text: #202124;
+      --muted: #5f6368;
+      --border: #dadce0;
+      --bg: #ffffff;
+      --link: #1a73e8;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 34px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin-top: 34px;
+      padding-top: 22px;
+      border-top: 1px solid var(--border);
+      font-size: 22px;
+      letter-spacing: 0;
+    }
+    p, li {
+      color: var(--text);
+    }
+    .updated {
+      margin-top: 0;
+      color: var(--muted);
+    }
+    a {
+      color: var(--link);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>MyCleanTab Privacy Policy</h1>
+    <p class="updated">Last updated: June 22, 2026</p>
+
+    <p>MyCleanTab is a Chrome extension that provides a customizable new tab page with shortcuts, folders, wallpapers, icon management, and search options.</p>
+
+    <h2>Developer Data Collection</h2>
+    <p>The developer of MyCleanTab does not collect, receive, sell, rent, or use users' personal data. The extension does not operate a developer-controlled server and does not use analytics, advertising tracking, or user profiling.</p>
+    <p>MyCleanTab does handle user-provided data locally to provide its new-tab customization and optional synchronization features. Data is sent to a third party only when required for a feature chosen by the user, such as a selected search provider, website icon or wallpaper retrieval, Jianguoyun/WebDAV synchronization, or Google Drive synchronization.</p>
+
+    <h2>Local Data Stored by the Extension</h2>
+    <p>To provide its user-facing features, MyCleanTab stores configuration data locally in the user's browser. This may include:</p>
+    <ul>
+      <li>New tab shortcut items and website URLs added by the user</li>
+      <li>Folder names and folder structure</li>
+      <li>Wallpaper cache used by the new tab page</li>
+      <li>Icon cache or icon URLs used to display shortcut icons</li>
+      <li>The user's selected quick search provider</li>
+      <li>Optional local JSON, Jianguoyun/WebDAV, or Google Drive sync configuration and status</li>
+    </ul>
+    <p>This data is used to restore the user's customized new tab layout and preferences. It remains in the browser unless the user exports it or explicitly enables a cloud sync provider.</p>
+
+    <h2>Optional Sync</h2>
+    <p>Sync is optional and configured by the user. MyCleanTab supports local JSON export and import, Jianguoyun through WebDAV, and Google Drive. When a cloud provider is enabled, the extension may upload shortcut URLs, folder structure, quick-search preference, and cloud sync configuration to the user's own account with that provider.</p>
+    <p>WebDAV URLs, usernames, passwords, OAuth access tokens, filenames, and automatic-sync settings are stored locally in the browser in plaintext. The saved sync configuration, including WebDAV credentials or OAuth access tokens when present, is also included in plaintext sync configuration exports and sync files. Users should enable sync only with accounts, devices, and providers they trust.</p>
+    <p>Google Drive sync creates or reuses a visible folder named <strong>MyCleanTab Backup</strong> in the user's Google Drive root and stores the configured JSON file inside it. Jianguoyun sync stores the configured file at the WebDAV location selected by the user. Local JSON export creates a file chosen and managed by the user.</p>
+    <p>Automatic synchronization is upload-only. MyCleanTab does not automatically download or overwrite local data. Downloading or importing a sync file requires an explicit user action and confirmation.</p>
+    <p>The developer does not operate a sync server and does not receive the user's sync data, WebDAV credentials, or cloud access tokens. Google or Jianguoyun processes uploaded data under that provider's own privacy and security policies.</p>
+
+    <h2>Security</h2>
+    <p>Google Drive synchronization and built-in remote-resource requests use HTTPS. WebDAV synchronization uses the endpoint selected by the user; users should select an HTTPS endpoint. WebDAV credentials and Google OAuth access tokens are stored locally in the browser as described above and may be included in exported or synchronized configuration files. Users should protect those files and use sync only on trusted devices and accounts.</p>
+
+    <h2>Search</h2>
+    <p>The primary search box uses Chrome's Search API so that searches are handled by the user's default search engine configured in Chrome. The extension does not change the user's default search provider.</p>
+    <p>If the user actively selects and uses a quick search provider, the search query is sent directly to the selected third-party search engine, such as Baidu, Google, or Bing. MyCleanTab does not receive or store those search queries on any developer server.</p>
+
+    <h2>Remote Resources</h2>
+    <p>MyCleanTab may load remote images or resources only to provide visible extension features, such as Bing wallpaper images and website favicon images. These requests are used to display wallpapers and shortcut icons. They are not used for advertising tracking or user profiling by MyCleanTab.</p>
+
+    <h2>Data Sharing</h2>
+    <p>MyCleanTab does not sell user data or transmit it to the developer. Data may be sent to a third party only when the user directly uses a selected search provider, when the extension loads remote images needed for visible features, or when the user enables sync with Jianguoyun/WebDAV or Google Drive.</p>
+
+    <h2>Limited Use</h2>
+    <p>The use of information received from Chrome APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>This privacy policy may be updated if the extension's functionality changes. Any updates will be reflected on this page.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy, please contact the developer through the contact information provided on the Chrome Web Store listing.</p>
+  </main>
+</body>
+</html>
